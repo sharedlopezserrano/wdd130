@@ -35,7 +35,7 @@ p {
     padding: 0;
 }
 
-.aside-img {
+aside img {
     width: 80%; 
     max-width: 400px;
     height: auto;
@@ -82,6 +82,10 @@ ul {
     justify-content: flex-start;
 }
 
-.nav-item {
+li {
     margin: 0 0.5rem;
+}
+
+nav {
+    padding: 1px;
 }
