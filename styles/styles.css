@@ -1,29 +1,29 @@
-.body {
+body {
     font-family: 'Roboto', sans-serif;
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    margin: 0; 
+    padding: 0; 
 }
 
-.main {
+main {
     max-width: 840px;
     margin: 0 auto;
     text-align: center;
 }
 
-.nav-link {
+a {
     text-decoration: none;
     color: rgb(55, 76, 145);
     display: block;
 }
 
-.main-title {
+h1 {
     color: teal;
 }
 
-.aside {
+aside {
     width: 100%;
     max-width: 500px;
-    margin: 3rem auto; /* Center the aside horizontally */
+    margin: 3rem auto;
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 1rem;
     background-color: #eee;
@@ -31,15 +31,15 @@
     text-align: center;
 }
 
-.main-text, .aside-text, .footer-text {
+p {
     padding: 0;
 }
 
 .aside-img {
-    width: 80%; /* Limit the width to 80% of the container */
-    max-width: 400px; /* Set a maximum width */
+    width: 80%; 
+    max-width: 400px;
     height: auto;
-    margin: 0 auto; /* Center the image */
+    margin: 0 auto; 
 }
 
 .profile-img {
@@ -50,58 +50,38 @@
     box-shadow: 0 0 30px grey;
 }
 
-.footer {
+footer {
     margin-top: 15px;
-    background-color: #374785;
+    background-color: #7d8cc7;
     text-align: center;
     padding: 1rem 0;
 }
 
-.footer-text {
-    color: white;
-}
-
-.header {
+header {
     background-color: #374785;
     color: white;
     padding: 15px;
     margin: auto;
 }
 
-.header .nav div {
-    display: flex;
-    align-items: center;
-}
-
-.header .nav-link {
+header nav a {
     color: white;
     text-decoration: none;
     margin: 0 1rem;
 }
 
-.header .nav-link:hover {
+header nav a:hover {
     color: #f9a826;
 }
 
-.nav-list {
+ul {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
-    justify-content: flex-start; /* Align navigation items to the left */
+    justify-content: flex-start;
 }
 
 .nav-item {
     margin: 0 0.5rem;
 }
-
-.header .nav-link-home {
-    text-decoration: none;
-    color: white;
-    display: block;
-}
-
-.header .nav-link-home:hover {
-    color: #f9a826;
-}
-
