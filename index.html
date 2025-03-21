@@ -8,31 +8,42 @@
     <meta name = "description" content="Shared Lopez's BYU-Idaho WDD 130 couurse home page">
     <meta name = "author" content="Shared Lopez">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="#">Home</a>
-            <a href="wwr">Rafting Site</a>
-            <a href="wwr/site-plan-rafting.html"></a>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">Home</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="wwr">Rafting Site</a></li>
+                    <li><a href="wwr/site-plan-rafting.html">Site Plan</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <main>
-        <h1>Shared Lopez | WDD 130</h1>
-        <img src="images/profile.jpg" alt="Hello my name is Shared Lopez" width="200">
-        <p>Hello! My name is Shared Lopez and I am from Santiago, Chile. Now i am living in the south of Brazil. I enjoy
-            videogames and play sports. I would like to get my degree in programming and be a better programer this
+    <main class="container center-align">
+        <h1 >Shared Lopez | WDD 130</h1>
+        <img src="images/profile.jpg" alt="Hello my name is Shared Lopez" class="circle responsive-img">
+        <p class="flow-text">Hello! My name is Shared Lopez and I am from Santiago, Chile. Now I am living in the south of Brazil. I enjoy
+            videogames and play sports. I would like to get my degree in programming and be a better programmer this
             year.</p>
     </main>
-    <aside>
+    <aside class="container" >
         <h2>Brazil</h2>
-        <img src="images/toledo.jpeg" alt="Toledo City">
+        <img src="images/toledo.jpeg" alt="Toledo City" class="responsive-img">
         <p>Toledo is a city located in the western part of the state of Paraná, Brazil. It is known for its agricultural production, particularly soybeans, corn, and poultry. The city also has a vibrant cultural scene and offers various recreational activities for residents and visitors. The population of Toledo is approximately 140,000 people. The city covers an area of about 1,197 square kilometers.</p>
     </aside>
-    <footer>
-        <p>©2025 Shared Lopez Toledo, Brazil</p>
+    <footer class="page-footer">
+        <div class="container">
+            <p>©2025 Shared Lopez Toledo, Brazil</p>
+        </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
