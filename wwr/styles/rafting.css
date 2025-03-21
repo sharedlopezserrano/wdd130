@@ -1,7 +1,139 @@
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #E7ECEF; 
+    color: #274C77; 
+}
+
+.header {
+    background-color: #6096BA; 
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header img {
+    display: block;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav li {
+    background-color: #A3CEF1;
+    padding: 0;
+    border-radius: 0;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.nav li:hover {
+    background-color: #6096BA;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #E7ECEF;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    padding: 10px 15px;
+}
+
+.nav a:hover {
+    color: #E7ECEF;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 20px;
+    background-color: #E7ECEF;
+    margin: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+    margin-bottom: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #E7ECEF;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section img {
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #6096BA;
+    color: #E7ECEF;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.footer img {
+    margin: 0;
+    align-self: flex-start;
+}
+
+.hero-content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.hero-content img {
+    margin-left: 40px;
+    margin-right: 40px;
+    float: right;
+    max-width: 40%;
+    height: auto;
+}
+
+.hero-content p {
+    flex: 1;
+    text-align: left;
+    margin: 40px;
+}
+
+.content {
+    text-align: center;
+    padding: 20px;
+    background-color: #E7ECEF;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 .roboto {
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 400; /* Default weight */
     font-style: normal;
     font-variation-settings: "wdth" 100;
 }
