@@ -14,16 +14,17 @@ body, h1, h2, p, ul, li {
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    background-color: var(--primary-color); 
-    color: var(--secondary-color); 
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .header {
-    background-color: var(--accent1-color); 
-    padding: 10px 20px;
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
-    justify-content: space-between;
+    background-color: var(--accent1-color);
+    padding: 10px 20px;
+    gap: 20px;
 }
 
 .header img {
@@ -34,14 +35,12 @@ body {
     list-style: none;
     display: flex;
     gap: 15px;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
 .nav li {
     background-color: var(--accent2-color);
-    padding: 0;
-    border-radius: 0;
 }
 
 .nav li:hover {
@@ -76,18 +75,28 @@ section img {
 
 .footer {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    padding: 10px;
+    padding: 10px 20px;
     background-color: var(--accent1-color);
     color: var(--primary-color);
     margin-top: 20px;
-    gap: 10px;
+    height: 70px;
+}
+
+.footer p {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+.footer a {
+    margin-left: 10px;
 }
 
 .footer img {
-    margin: 0;
-    align-self: flex-start;
+    margin-left: 5px;
+    vertical-align: middle;
 }
 
 .content {
@@ -100,7 +109,7 @@ section img {
 }
 
 .hero {
-    position: relative; 
+    position: relative;
     width: 100%;
     height: 500px;
     background-color: var(--primary-color);
@@ -112,19 +121,19 @@ section img {
 }
 
 .hero h1 {
-    position: absolute; 
-    top: 10%; 
-    left: 50%; 
+    position: absolute;
+    top: 10%;
+    left: 50%;
     transform: translateX(-50%);
     font-size: 2rem;
-    color: var(--secondary-color); 
-    z-index: 2; 
+    color: var(--secondary-color);
+    z-index: 2;
 }
 
 .hero article {
-    position: absolute; 
-    bottom: 10%; 
-    left: 50%; 
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
     transform: translateX(-50%);
     display: flex;
     gap: 20px;
