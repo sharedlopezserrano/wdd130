@@ -126,7 +126,7 @@ section img {
     transform: translateX(-50%);
     display: flex;
     gap: 20px;
-    background: var(--accent1-color);
+    background: var(--secondary-color);
     color: var(--primary-color);
     padding: 20px;
     border-radius: 10px;
