@@ -1,11 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact us for more information about White Water Rafting Adventure Club, our rafting adventures, our history, and what awaits you." />
+  <meta name="author" content="Shared Lopez" />
+  <title>Contact Us - Rafting Adventure Club</title>
+  <link rel="stylesheet" href="styles/rafting.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+  <header>
+    <div class="header">
+      <img src="images/logo.jpg" alt="White Water Rafting Logo" width="50" height="50" />
+      <nav>
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="trips.html">Trips</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="reach-our-team">
+        <h2>Reach Our Team</h2>
+        <p class="intro-text">We love questions and feedback – and we’re always happy to help!<br />Here are some ways to contact us.</p>
+        <div class="contact-options">
+          <div class="contact-box">
+            <h3>Talk to Sales</h3>
+            <p>Chat with our sales team to discover how our product can work best for you.</p>
+            <div class="contact-phone">
+              <span>📞</span> 01 632 960 985
+            </div>
+          </div>
+          <div class="contact-box">
+            <h3>Contact Customer Support</h3>
+            <p>We are waiting to help you and your team – so don’t hesitate to reach out!</p>
+            <button class="support-button">Contact Support</button>
+          </div>
+        </div>
+      </section>
+      <section class="map-contact">
+        <div class="contact-details">
+          <h2>Headquarters</h2>
+          <p><strong>Boston, United States</strong></p>
+          <p>📍 177 Huntington Ave<br />Ste 1703</p>
+          <p>✉️ contact-us@company.com</p>
+          <p>📞 +1-617-555-0108</p>
+          <div class="map-socials">
+            <a href="#"><img src="images/whatsapp.png" alt="Twitter" /></a>
+            <a href="#"><img src="images/instagram.png" alt="Instagram" /></a>
+            <a href="#"><img src="images/facebook.png" alt="Facebook" /></a>
+          </div>
+        </div>
+        <div class="contact-map">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.297602167289!2d-71.0890933!3d42.3436844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e379b62ab0ab3d%3A0xf8b6d61e9d28a08a!2s177%20Huntington%20Ave%2C%20Boston%2C%20MA%2002115%2C%20USA!5e0!3m2!1sen!2sus!4v1712345678901"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </section>
+    <section class="employee-profiles">
+      <h2>Meet Our Team</h2>
+      <div class="profiles">
+        <div class="profile">
+          <img src="images/employee 1.jpg" alt="John Doe - Adventure Guide" width="150" height="150" />
+          <p><strong>John Doe</strong><br />Adventure Guide</p>
+        </div>
+        <div class="profile">
+          <img src="images/employee 2.jpg" alt="Jane Smith - Safety Coordinator" width="150" height="150" />
+          <p><strong>Jane Smith</strong><br />Safety Coordinator</p>
+        </div>
+        <div class="profile">
+          <img src="images/employee 3.jpg" alt="Emily Davis - Trip Planner" width="150" height="150" />
+          <p><strong>Mike Johnson</strong><br />Trip Planner</p>
+        </div>
+      </div>
+    </section>
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <fieldset>
+          <legend>Purpose of Message:</legend>
+          <label>
+            <input type="radio" name="purpose" value="general" required />
+            General Inquiry
+          </label>
+          <label>
+            <input type="radio" name="purpose" value="reservation" />
+            Reservation Question
+          </label>
+          <label>
+            <input type="radio" name="purpose" value="suggestion" />
+            Website Suggestion
+          </label>
+        </fieldset>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <label>
+          <input type="checkbox" name="subscribe" />
+          Please subscribe me to the monthly newsletter
+        </label>
+
+        <button type="submit" class="submit-button">Send Message</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div class="footer">
+      <p>&copy; 2025 Rafting Adventure Club Shared Lopez. Follow us on social media:</p>
+      <a href="https://www.facebook.com" target="_blank">
+        <img src="images/facebook.png" alt="Facebook" width="30" height="30" />
+      </a>
+      <a href="https://www.instagram.com" target="_blank">
+        <img src="images/instagram.png" alt="Instagram" width="30" height="30" />
+      </a>
+      <a href="https://www.whatsapp.com" target="_blank">
+        <img src="images/whatsapp.png" alt="WhatsApp" width="30" height="30" />
+      </a>
+      <ul>
+        <li><a href="https://app.moqups.com/bTVl6NTZAWd8b1zzehdHJySz2BHfofaZ/view/page/ad12de680" target="_blank">Wireframe</a></li>
+      </ul>
+    </div>
+  </footer>
 </body>
 </html>

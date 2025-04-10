@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0; 
@@ -8,6 +14,7 @@ main {
     max-width: 840px;
     margin: 0 auto;
     text-align: center;
+    grid-column: 2;
 }
 
 a {
@@ -21,14 +28,10 @@ h1 {
 }
 
 aside {
-    width: 100%;
-    max-width: 500px;
-    margin: 3rem auto;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
+    width: 20rem;
+    position: relative;
+    grid-column: 1;
+    grid-row: 1;
 }
 
 p {
@@ -50,22 +53,28 @@ aside img {
     box-shadow: 0 0 30px grey;
 }
 
-footer {
-    margin-top: 15px;
-    background-color: #7d8cc7;
-    text-align: center;
-    padding: 1rem 0;
+header, footer .grid{
+    max-width: 840px;
+    margin: 0 auto;
 }
 
 header {
-    background-color: #374785;
+    background-color: #333; /* Add a dark background color for contrast */
+}
+
+header nav {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically */
+    justify-content: space-evenly; /* Distribute space evenly */
     color: white;
-    padding: 15px;
-    margin: auto;
+    text-decoration: none;
+    margin: 0 1rem;
+    background-color: #444; /* Add a background color */
+    padding: 1rem; /* Add padding */
 }
 
 header nav a {
-    color: white;
+    color: white; /* Ensure the text color contrasts with the background */
     text-decoration: none;
     margin: 0 1rem;
 }
@@ -76,6 +85,8 @@ header nav a:hover {
 
 ul {
     display: flex;
+    justify-content: center;
+    align-items: center;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -88,4 +99,27 @@ li {
 
 nav {
     padding: 1px;
+}
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Two columns: 1 part for city, 2 parts for info */
+    gap: 1rem; /* Add spacing between columns */
+    max-width: 840px;
+    margin: 0 auto;
+    align-items: start; /* Align items at the top */
+}
+
+.info {
+    grid-column: 2; /* Place in the second column */
+    text-align: center;
+}
+
+.city {
+    grid-column: 1; /* Place in the first column */
+    text-align: left;
 }
