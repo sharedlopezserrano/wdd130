@@ -449,7 +449,6 @@ main {
     min-height: 300px;
 }
 
-/* Newsletter Section */
 .newsletter {
     text-align: center;
     padding: 20px;
@@ -497,8 +496,6 @@ main {
 .newsletter button:hover {
     background-color: var(--accent1-color);
 }
-
-/* Call to Action */
 .call-to-action {
     text-align: center;
     padding: 20px;
@@ -530,7 +527,6 @@ main {
     color: var(--acent4-color);
 }
 
-/* Grid Layout Section */
 .site-purpose {
     padding: 20px;
     text-align: center;
