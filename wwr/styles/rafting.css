@@ -4,6 +4,7 @@
     --accent1-color: #6096BA;
     --accent2-color: #A3CEF1;
     --accent3-color: #322816;
+    --acent4-color: #1A1A1A;
 }
 
 body, h1, h2, p, ul, li {
@@ -17,7 +18,8 @@ body {
     line-height: 1.6;
     background-color: var(--primary-color);
     color: var(--secondary-color);
-}
+    overflow-x:hidden ;
+    }
 
 .header {
     display: grid;
@@ -100,23 +102,21 @@ section img {
 .hero {
     position: relative;
     width: 100%;
-    height: 500px;
-    background-color: var(--primary-color);
-    background-position: center;
+    height: 400px;
+    background: url('../images/rafting11.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    color: var(--primary-color);
 }
 
 .hero h1 {
     position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 2rem;
-    color: var(--secondary-color);
-    z-index: 2;
+    font-size: 2.5rem;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
 }
 
 .hero article {
@@ -449,3 +449,111 @@ main {
     min-height: 300px;
 }
 
+/* Newsletter Section */
+.newsletter {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--accent2-color);
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.newsletter h2 {
+    color: var(--accent3-color);
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.newsletter form label {
+    align-self: flex-start;
+    font-weight: bold;
+    color: var(--accent3-color);
+}
+
+.newsletter input {
+    padding: 10px;
+    border: 1px solid var(--accent3-color);
+    border-radius: 5px;
+    width: 95%;
+    align-self: flex-start;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.newsletter button:hover {
+    background-color: var(--accent1-color);
+}
+
+/* Call to Action */
+.call-to-action {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    border-radius: 8px;
+    margin: 20px auto;
+}
+
+.call-to-action .cta-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.call-to-action .cta-button:hover {
+    background-color: var(--accent2-color);
+}
+
+.call-to-action h2 {
+    color : var(--acent4-color);
+}
+.call-to-action p {
+    color: var(--acent4-color);
+}
+
+/* Grid Layout Section */
+.site-purpose {
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.grid-item {
+    background-color: var(--primary-color);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
